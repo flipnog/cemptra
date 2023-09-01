@@ -284,8 +284,7 @@ main{
 .content nav .profile img{
     width: 36px;
     height: 36px;
-    object-fit: cover;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .content nav .theme-toggle{

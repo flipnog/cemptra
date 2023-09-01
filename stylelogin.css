@@ -44,11 +44,9 @@ body{
 }
 
 .login > img{
-    width: 120px;
-    aspect-ratio: 1/1;
+    width: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .login > h2{
