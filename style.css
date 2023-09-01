@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 .bx{
@@ -47,6 +48,10 @@ body.dark{
 body{
     background: var(--grey);
     overflow-x: hidden;
+}
+
+main{
+    height: 80vh;
 }
 
 .sidebar{
@@ -79,7 +84,8 @@ body{
     color: var(--primary);
     z-index: 500;
     padding-bottom: 20px;
-    box-sizing: content-box;
+    box-sizing: content-box;  
+    padding-left: 20px;
 }
 
 .sidebar .logo .logo-name span{
@@ -284,8 +290,8 @@ body{
 
 .content nav .theme-toggle{
     display: block;
-    min-width: 50px;
-    height: 25px;
+    min-width: 60px;
+    height: 28px;
     background: var(--grey);
     cursor: pointer;
     position: relative;
@@ -295,9 +301,9 @@ body{
 .content nav .theme-toggle::before{
     content: "";
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 2px;
-    bottom: 2px;
+    bottom: 4px;
     width: calc(25px - 4px);
     background: var(--primary);
     border-radius: 50%;
@@ -560,6 +566,145 @@ body{
 .content main .bottom-data .reminders .task-list li:last-child{
    margin-bottom: 0;
 }
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+}
+
+main {
+    height: 40vh;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    margin-left: 80px;
+    gap: 50rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 20rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 5rem;
+    margin-top: 1.5rem;
+} 
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;    
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #7f37c9;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #7f37c9;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 0.75rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        font-size: 10px;
+        margin-top: 1000px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     .sidebar{

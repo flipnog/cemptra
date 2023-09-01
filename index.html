@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Morangue</title>
 </head>
 <body>
+
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="#" class="logo">
-            <i class='bx bx-leaf'></i>
-            <div class="logo-name"><span>Mora</span>ngue</div>
+            <i class="fa-solid fa-stethoscope"></i>
+            &nbsp;&nbsp;<div class="logo-name"><span>CEM</span>PTRA</div>
         </a>
         <ul class="side-menu">
             <li><a href="#"><i class='bx bxs-dashboard' ></i>Painel Inicial</a></li>
@@ -25,7 +28,7 @@
         </ul>
         <ul class="side-menu">
             <li>
-                <a href="#" class="logout">
+                <a href="../login/index.html" class="logout">
                     <i class='bx bx-log-out-circle' ></i>
                     Deslogar
                 </a>
@@ -49,7 +52,7 @@
             <label for="theme-toggle" class="theme-toggle"></label>
             <a href="#" class="notif">
                 <i class='bx bx-bell'></i>
-                <span class="count">12</span>
+                <span class="count">15</span>
             </a>
             <a href="#" class="profile">
                 <img src="logo.png">
@@ -57,10 +60,10 @@
         </nav>
 
         <!-- Fim da Navbar -->
-
         <main>
             <div class="header">
                 <div class="left">
+                    <h1><b>Bem-vindo, ...!</b></h1>
                     <h1>Painel Inicial</h1>
                     <ul class="breadcrumb">
                         <li><a href="#">
@@ -82,43 +85,43 @@
                     <i class='bx bx-calendar-check'></i>
                     <span class="info">
                         <h3>
-                            1,074
+                            1.074
                         </h3>
-                        <p>Usuários</p>
+                        <p>Clientes Matriculados</p>
                     </span>
                 </li>
                 <li><i class='bx bx-show-alt'></i>
                     <span class="info">
                         <h3>
-                            3,944
+                            14.721
                         </h3>
-                        <p>Alunos Matriculados</p>
+                        <p>Visitas</p>
                     </span>
                 </li>
                 <li><i class='bx bx-line-chart'></i>
                     <span class="info">
                         <h3>
-                            14,721
+                            3.944
                         </h3>
-                        <p>Procura</p>
+                        <p>Consultas</p>
                     </span>
                 </li>
                 <li><i class='bx bx-dollar-circle'></i>
                     <span class="info">
                         <h3>
-                            R$6,742
+                            R$6.742
                         </h3>
                         <p>Renda Total</p>
                     </span>
                 </li>
             </ul>
-            <!-- Fim dos Dados -->
 
+            <!-- Fim dos Dados -->
             <div class="bottom-data">
                 <div class="orders">
                     <div class="header">
                         <i class='bx bx-receipt'></i>
-                        <h3>Requerimentos</h3>
+                        <h3>Clientes</h3>
                         <i class='bx bx-filter'></i>
                         <i class='bx bx-search'></i>
                     </div>
@@ -126,33 +129,33 @@
                         <thead>
                             <tr>
                                 <th>Usuário</th>
-                                <th>Data do Pedido</th>
+                                <th>Data da Consulta</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="giovs.jpg">
-                                    <p>Giovanna Lidório Pires</p>
+                                    <img src="user.png">
+                                    <p>Fulano de Tal</p>
                                 </td>
-                                <td>16-07-2023</td>
+                                <td>06-09-2023</td>
                                 <td><span class="status pending">Pendente</span></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="gabriel.jpg">
-                                    <p>Gabriel dos Anjos Lopes</p>
+                                    <img src="user.png">
+                                    <p>Ciclano de Tal</p>
                                 </td>
-                                <td>06-07-2023</td>
+                                <td>16-09-2023</td>
                                 <td><span class="status process">Em andamento</span></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="pp.png">
-                                    <p>Pedro Paulo P. Brito</p>
+                                    <img src="user.png">
+                                    <p>Beltrano de Tal</p>
                                 </td>
-                                <td>28-06-2023</td>
+                                <td>28-09-2023</td>
                                 <td><span class="status completed">Concluído</span></td>
                             </tr>
                         </tbody>
@@ -191,15 +194,52 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Fim dos Lembretes -->
 
             </div>
-
         </main>
-
     </div>
+    <main>
+        
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Contatos</h1>
+                <p>Desenvolvido por: <b>Felipe Diniz</b></p>
 
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/felipe.nogs" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.link/jcgl8g" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Outros sites</h3>
+                </li>
+                <li>
+                    <a href="https://mostracultural.info" target="_blank" class="footer-link">Mostracultural</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="footer-link">Flipass</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="footer-link">Cards (Beta)</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 Nenhum direito reservado :)
+        </div>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
